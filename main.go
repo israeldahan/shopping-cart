@@ -21,7 +21,7 @@ func main() {
 	
 	r := routers.InitRouter()
 	serverURL := fmt.Sprintf("%s:%s", viper.GetString("server.host"), viper.GetString("server.port"))
-	logger.Info("started" + "url" + serverURL + "version" + Version)
+	logger.Info("started url: " + serverURL + " version " + Version)
 	r.Run(serverURL)
 
 }
