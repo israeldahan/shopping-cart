@@ -15,6 +15,7 @@ func InitConfig() {
 	viper.SetConfigType("json")
 	viper.AddConfigPath(getConfigPath())
 	viper.AutomaticEnv()
+	viper.SetEnvPrefix("SC")
 	viper.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
 	viper.ReadInConfig()
 }
