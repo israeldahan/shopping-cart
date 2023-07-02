@@ -7,11 +7,12 @@ import (
 func CalculateBillForDiscountTypeFor(count float64, price float64, discountQuantity float64, discountPrice float64) (float64, error) {
 	if count < discountQuantity {
 		return count * price, nil
-	} else if math.Remainder(count, discountQuantity) == 0 {
+	} else if math.Mod(count, discountQuantity) == 0 {
 		amount := count / discountQuantity
 		return amount * discountPrice, nil
 	} else {
-		outOfDiscount := math.Remainder(count, discountQuantity)
+		outOfDiscount := math.Mod(count, discountQuantity)
+		// outOfDiscount := math.Remainder(count, discountQuantity)
 		amount := (count - outOfDiscount) / discountQuantity
 		return amount*discountPrice + outOfDiscount*price, nil
 	}
@@ -22,10 +23,10 @@ func CalculateBillForDiscountTypePlus(count float64, price float64, discountQuan
 	discountPrice := price - (price * (discountPlus / totalDiscount))
 	if count < totalDiscount {
 		return count * price, nil
-	} else if math.Remainder(count, totalDiscount) == 0 {
+	} else if math.Mod(count, totalDiscount) == 0 {
 		return count * discountPrice, nil
 	} else {
-		outOfDiscount := math.Remainder(count, discountQuantity)
+		outOfDiscount := math.Mod(count, totalDiscount)
 		amaunt := (count - outOfDiscount)
 		return amaunt*discountPrice + outOfDiscount*price, nil
 	}
