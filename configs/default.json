@@ -1,0 +1,21 @@
+{
+    "server": {
+        "host": "localhost",
+        "port": "2345"
+    },
+    "priceAndDiscount": {
+        "milk": {
+            "price": 5,
+            "discount": "2 + 1"
+        },
+        "bread": {
+            "price": 6.5,
+            "discount": "3 for 15"
+        },
+        "ketchup": {
+            "price": 15,
+            "discount": "2 for 15"
+        }
+
+    }
+}

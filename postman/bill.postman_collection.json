@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "d060cb12-dc9f-47ad-b6d0-7ca7089c9950",
+		"name": "bill",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:2345/bill",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cart\": [\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"milk\" },\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"},\n        { \"name\": \"bread\"}\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2345/bill",
+					"host": [
+						"localhost"
+					],
+					"port": "2345",
+					"path": [
+						"bill"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
